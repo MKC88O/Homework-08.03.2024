@@ -6,13 +6,13 @@ using namespace std;
 int main() {
     double a;
     double b;
-    double c;
+    
     double* pa = &a;
     double* pb = &b;
-    double* pc = &c;
 
-    int distance = pc - pa;
+    int distance = pb - pa;
     int distanceBytes = distance * 8;
+    
     cout << "Distance between variables in variables: " << distance << "\n";
     cout << "Distance between variables in bytes: " << distanceBytes << "\n";
 }
